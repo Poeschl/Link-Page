@@ -1,7 +1,7 @@
 /* global */
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 
-body{
+body {
     margin: 0;
     padding: 0;
     font-family: 'Roboto', sans-serif;
@@ -10,27 +10,27 @@ body{
 
 }
 
-h2,.white{
+h2, .white {
     color: #fff;
 }
 
-a{
+a {
     color: #7A7C80;
     text-decoration: none;
 }
 
-.section{
+.section {
     padding-top: 28vh;
     text-align: center;
 }
 
-.section p{
+.section p {
     font-size: 1.1rem;
     padding-bottom: 10px;
     margin:0;
 }
 
-.section h2{
+.section h2 {
     font-size: 1.8rem;
     margin-bottom: 10px;
 }
@@ -40,21 +40,47 @@ a{
     padding: 8px;
 }
 
-.section a:hover{
+.section a:hover {
     color: #fff;
     cursor: pointer;
     transition: 0.2s;
     text-shadow: 5px 5px 2px #000000;
 }
 
-.white:hover{
+.white:hover {
     position: relative;
     padding-left: 10px;
 }
 
 /* media queres */
-@media(max-width:780px){
+@media(max-width:780px) {
     .section{
         padding: 5rem 0 0;
     }
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  opacity: 0;
+  width: 140px;
+  background-color: #070809;
+  color: #7a7c80;
+  text-align: center;
+  border-radius: 8px;
+  padding: 4px 0;
+  
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -70px;
+}
+
+.tooltip:hover .tooltiptext {
+    transition: 0.2s;
+    opacity: 1;
 }

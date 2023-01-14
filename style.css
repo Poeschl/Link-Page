@@ -15,7 +15,7 @@ h2, .white {
 }
 
 a {
-    color: #7A7C80;
+    color: #b7b9bf;
     text-decoration: none;
 }
 
@@ -56,6 +56,14 @@ a {
 .links a:hover img, .links a:hover svg {
   filter: invert(1) drop-shadow(5px 5px 2px #000000);
   transition: 0.2s;
+}
+
+.links .fading a {
+    opacity: 0.6;
+}
+
+.links .fading:hover a {
+    opacity: 1;
 }
 
 

@@ -7,7 +7,10 @@ body {
   font-family: 'Roboto', sans-serif;
   background-color: #2b2b2b;
   color: #a8abaf;
-
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
 }
 
 h2,
@@ -21,8 +24,10 @@ a {
 }
 
 .section {
-  padding-top: 28vh;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .section p {
@@ -34,6 +39,13 @@ a {
 .section h2 {
   font-size: 1.8rem;
   margin-bottom: 10px;
+}
+
+.links {
+  margin: 4px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .links a {

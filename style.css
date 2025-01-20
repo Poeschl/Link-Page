@@ -18,6 +18,10 @@ h2,
   color: #fff;
 }
 
+h3 {
+  color: #c3c2c2;
+}
+
 a {
   color: #b7b9bf;
   text-decoration: none;
@@ -41,26 +45,34 @@ a {
   margin-bottom: 10px;
 }
 
-.links {
-  margin: 4px;
+.section h3 {
+  font-size: 1.25rem;
+  margin-bottom: 10px;
+}
+
+.links, .tools {
+  margin: 4px 4px 16px 4px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.links a {
+.links a, .tools a {
   font-size: 2rem;
   padding: 8px;
 }
 
 .links a img,
-.links a svg {
+.links a svg,
+.tools a img,
+.tools a svg {
   height: 32px;
   width: 32px;
   filter: invert(0.7);
 }
 
-.links a:hover {
+.links a:hover,
+.tools a:hover{
   color: #fff;
   cursor: pointer;
   transition: .2s;
@@ -68,19 +80,22 @@ a {
 }
 
 .links a:hover img,
-.links a:hover svg {
+.links a:hover svg,
+.tools a:hover img,
+.tools a:hover svg{
   filter: invert(1) drop-shadow(5px 5px 2px #000000);
   transition: .2s;
 }
 
-.links .fading a {
+.links .fading a,
+.tools .fading a{
   opacity: 0.4;
 }
 
-.links .fading:hover a {
+.links .fading:hover a,
+.tools .fading:hover a{
   opacity: 1;
 }
-
 
 /* media queres */
 @media(max-width:780px) {
@@ -92,6 +107,7 @@ a {
 .tooltip {
   position: relative;
   display: inline-block;
+  cursor: default;
 }
 
 .tooltip .tooltiptext {
